@@ -4,6 +4,6 @@
 
 访问地址：https://liuchenlin157.github.io/stardew-vue-save-editor-pages/
 
-存档在浏览器本地处理，不上传存档。发布来源提交：`55840e5e0699f935abb6751a4570f699c265b5ab`。
+存档在浏览器本地处理，不上传存档。发布来源提交：`ae80c6d363c23c90a797b66a7e12e9090b27cd92`。
 
 游戏素材及中文文本归原权利人所有；第三方来源及许可见 site/THIRD_PARTY_NOTICES.md 和 site/licenses/。
