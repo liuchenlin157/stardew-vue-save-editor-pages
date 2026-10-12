@@ -1,5 +1,12 @@
 # 第三方来源与许可
 
+## 本轮新增农场布局资料
+
+- `src/data/layout-definitions.json` 来自 [kronosta/stardew-data](https://github.com/kronosta/stardew-data/tree/de69cb5ce6f3708a63d53ed414b757b39b3f105e) 的固定游戏数据导出，沿用游戏原权利归属。
+- `src/data/layout-maps.json` 的区域资料与 `public/assets/layout/` 的底图、切片来自 [hpeinar/stardewplanner](https://github.com/hpeinar/stardewplanner/tree/f6c8dd5fba513d78b95d491a8aa77d6532c55ee6)。代码及区域资料的 Apache-2.0 原文保留于 `licenses/stardew-planner.md`；本项目将坐标列表转换为逐行位图，并建立中文地图索引。这是旧版 Planner 资料，未使用非开源的 V3 代码。
+- 地图图像与游戏切片归 ConcernedApe 等原权利人，不能套用 Planner 代码许可。新增数据、来源地址、固定版本及原资源 SHA-256 记录于 `src/data/layout-sources.json`。
+- 实例结构和规则核对所用游戏结构参考及文件清单见 [农场布局说明](docs/farm-layout.md)，研究源文件不纳入发布产物。
+
 上游：[colecrouter/stardew-save-editor](https://github.com/colecrouter/stardew-save-editor)。固定提交 `2432d4ec1c4defb90a7b470f547826d2274b02f9`，原仓库 Contributors，Copyright 2024。代码许可原文保存在 `licenses/stardew-save-editor.md`，保留其游戏素材排除声明。
 
 ## 复用代码
@@ -38,6 +45,8 @@ Stardew Valley 素材、名称及游戏派生内容仍归各自权利人（包�
 工具与武器附魔适配亦核对上述固定反编译源中的 `BaseEnchantment`、普通附魔及锻造/次级附魔类、`Tool.AddEnchantment`、`Farmer.ReequipEnchantments`、`Axe`、`Pickaxe` 和 `WateringCan`。仅实现已核实的 XML 字段与效果规则，没有分发整份核对源；中文附魔显示名及简短说明为本项目整理。支持范围见 `docs/item-editing.md`。
 
 `GameIcon.vue` 的原游戏菜单图标使用既有 `Cursors.png`，裁切位置核对同一固定源的 `GameMenu.draw`（16×16、y=368）；其他入口图标复用既有物品目录与人物分层，不新增外部图集。
+
+农场布局新增神秘树各阶段与树桩 PNG 来自[官方维基神秘树页面](https://stardewvalleywiki.com/Mystic_Tree)所载游戏参考图片；通过 imageinfo API 核对原图 URL 与尺寸，保留原字节。`src/data/layout-sources.json` 记录来源、尺寸及 SHA-256，维护脚本可重新获取。没有复制维基说明正文；游戏图像仍归 ConcernedApe 等权利人，不适用项目代码许可，运行时仅加载本地素材。
 
 ## npm 依赖
 
